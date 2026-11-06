@@ -84,3 +84,10 @@ body {
 .header-thin {
   font-weight: 200;
 }
+
+.cards {
+  .card {
+    width: 21.875rem;
+    height: 15.625rem;
+  }
+}
