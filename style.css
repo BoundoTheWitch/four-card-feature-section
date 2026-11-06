@@ -61,9 +61,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /* End of reset */
 
+html,
 body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
   font-size: 0.938rem;
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: var(--clr-grey-500);
+}
+
+
+.header-group {
+  width: 32rem;
+  text-align: center;
+}
+
+.header-thin {
+  font-weight: 200;
 }
