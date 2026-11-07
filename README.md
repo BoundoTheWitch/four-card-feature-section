@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/BoundoTheWitch/four-card-feature-section](https://your-solution-url.com)
-- Live Site URL: [TBD](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/BoundoTheWitch/four-card-feature-section)
+- Live Site URL: [Netlify](https://superb-conkies-902da3.netlify.app/)
 
 ## My process
 
