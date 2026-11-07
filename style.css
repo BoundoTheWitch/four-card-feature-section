@@ -4,8 +4,6 @@
   --clr-orange: hsl(34, 97%, 64%);
   --clr-blue: hsl(212, 86%, 64%);
 
-  --clr-white: hsl(0, 0%, 100%);
-
   --clr-grey-400: hsl(212, 6%, 44%);
   --clr-grey-500: hsl(234, 12%, 34%);
 }
@@ -86,8 +84,28 @@ body {
 }
 
 .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   .card {
-    width: 21.875rem;
-    height: 15.625rem;
+    max-width: 21.875rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    /* max-height: 15.625rem; */
   }
+
+  .card__supervisor {}
+  .card__team-builder {}
+  .card__karma {}
+  .card__calculator {}
+
+  .card__border {
+    height: 3px;
+    width: 100%;
+  }
+
+  .border-cyan { background-color: var(--clr-cyan); }
+  .border-orange { background-color: var(--clr-orange); }
+  .border-red { background-color: var(--clr-red); }
+  .border-blue { background-color: var(--clr-blue); }
 }
