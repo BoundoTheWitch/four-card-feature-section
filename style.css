@@ -67,10 +67,15 @@ body {
 body {
   display: grid;
   place-items: center;
-  font-size: 0.938rem;
+  font-size: 15px;
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: var(--clr-grey-500);
+}
+
+main {
+  display: grid;
+  place-items: center;
 }
 
 
@@ -84,23 +89,45 @@ body {
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  --card-width: 21.875rem;
+
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  p { color: var(--clr-grey-400); }
+
   .card {
-    max-width: 21.875rem;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-flow: column;
+    max-width: var(--card-width);
+    min-height: 15.625rem;
     border-radius: 0.5rem;
     overflow: hidden;
-    /* max-height: 15.625rem; */
+    box-shadow: 0 0.5rem 2rem rgba(76, 78, 97, 0.5); /* I copied grey-400's HSL color and made it rgba with 50% opacity */
   }
 
-  .card__supervisor {}
-  .card__team-builder {}
-  .card__karma {}
-  .card__calculator {}
+  .card__container {
+    padding: 1.5rem;
+  }
+
+  .card__img {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.5rem;
+  }
+
+  .card__columns {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+  }
 
   .card__border {
-    height: 3px;
+    height: 5px;
     width: 100%;
   }
 
@@ -108,4 +135,19 @@ body {
   .border-orange { background-color: var(--clr-orange); }
   .border-red { background-color: var(--clr-red); }
   .border-blue { background-color: var(--clr-blue); }
+}
+
+@media (max-width: 1170px) {
+  body {
+    margin: 2rem;
+  }
+
+  .header-group {
+    width: 100%;
+    font-size: 3.083vw;
+  }
+
+  .cards {
+    flex-flow: column;
+  }
 }
